@@ -1,0 +1,4 @@
+r < crashinput
+where
+quit
+
