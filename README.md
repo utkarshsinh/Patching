@@ -2,7 +2,7 @@
 ## Implemented Control Flow Integrity for Secure Software Execution
 In a key project, I engineered a robust Control Flow Integrity (CFI) system to enhance software security. This involved disassembling a binary using Datalog Disassembler (ddisasm) and then systematically injecting CFI checks within the assembly code. I strategically inserted prefetchnta instructions after each callq to mark valid return points and modified retq instructions to redirect to a custom validation function, ensuring returns were only made to authenticated points in the code. This process effectively mitigated a known buffer overflow vulnerability, as evidenced by the absence of crashes with previously failing inputs. The project required meticulous coding in assembly, proficiency with debugging tools like GDB, and a deep understanding of software vulnerabilities and exploits. Successful recompilation and testing of the binary demonstrated the efficacy of the CFI implementation in enhancing the application's security without compromising its functionality.
 ## Technical Skills
-*Languages: Python, Assembly, Bash Scripting
+* Languages: Python, Assembly, Bash Scripting
 *Tools: AFL++, Radamsa, Datalog Disassembler, Docker, GCC, GDB
 Concepts: Binary Disassembly, Control Flow Integrity (CFI), Software Hardening, Dockerization, Fuzz Testing, Vulnerability Identification and Mitigation
 ## Skill Set
